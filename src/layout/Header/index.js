@@ -5,11 +5,14 @@ import './style.css'
 
 const Header = () => {
      return (
+        <>
+        <h1 id="my-name" class="header">Ravil Shafiyev</h1>
         <nav>
         <NavLink exact to="/" activeClassName="current">Home</NavLink>
         <NavLink to="/about_me" activeClassName="current">About Me</NavLink>
         <NavLink to="/news" activeClassName="current">Contact</NavLink>
         </nav>
+        </>
      );
 }
 
