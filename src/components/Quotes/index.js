@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import quotes from './data'
@@ -26,6 +26,7 @@ const Quotes = () => {
 
     setQuotes(data)
 
+    useEffect(() => {
     const renderQuote = () => {
         const index = () => {
             let index = Math.floor(Math.random() * data.length);
@@ -34,6 +35,10 @@ const Quotes = () => {
         return quotes[index()]
     }
     renderQuote()
+    const stream = setInterval(renderQuote, 10000)
+
+    return () => clearInterval(stream)
+    }, [])
 
     return (
         <>
