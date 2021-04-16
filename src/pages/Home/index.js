@@ -1,5 +1,13 @@
 import React from 'react';
+import { Quotes } from '../../components/Quotes';
 
-const Home = () => <h1>Welcome</h1>;
+const Home = () => { 
+    return (
+        <>
+        <h2>Welcome</h2>
+        <Quotes />
+        </>
+    )
+};
 
 export default Home;
