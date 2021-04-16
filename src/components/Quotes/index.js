@@ -4,9 +4,9 @@ import axios from 'axios';
 import quotes from './data'
 
 const Quotes = () => {
-    const [ quote, setQuote ] = useState();
+    const [ quotes, setQuotes ] = useState();
     
-    let data = [
+    let { data } = [
         '"PERFECT IS THE ENEMY OF GOOD." –VOLTAIRE',
         '"I’M STILL LEARNING." –MICHELANGELO',
         '"LIFE IS A JOURNEY, NOT A DESTINATION." –RALPH WALDO EMERSON',
@@ -24,13 +24,23 @@ const Quotes = () => {
         '"A LEARNING CURVE IS ESSENTIAL TO GROWTH." –TAMMY BJELLAND'
     ]
 
-    setQuote(data)
+    setQuotes(data)
 
     const renderQuote = () => {
-        return quotes
+        const index = () => {
+            let index = Math.floor(Math.random() * data.length);
+            return index;
+          }
+        return quotes[index()]
     }
+    renderQuote()
 
-    return(<h1>Quotes are coming soon!</h1>)
+    return (
+        <>
+        <h1>Motivational Quotes</h1>
+        <p>{quotes}</p>
+        </>
+    )
 }
 
 export default Quotes
