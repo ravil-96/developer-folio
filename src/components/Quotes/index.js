@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-
-import quotes from './data'
 
 const Quotes = () => {
     const [ quotes, setQuotes ] = useState();
@@ -41,11 +38,11 @@ const Quotes = () => {
     }, [])
 
     return (
-        <>
-        <h1>Motivational Quotes</h1>
+        <div id="quotes-container">
+        <h1 id="quotes-heading">Motivational Quotes</h1>
         <p>{quotes}</p>
-        </>
+        </div>
     )
 }
 
-export default Quotes
+export default Quotes;

@@ -32,7 +32,7 @@ h2 {
     border: 3px solid;
   }
 
-  .image-align{
+.image-align{
     float: right;
     width: 350px;
     margin-right: 100px;
@@ -40,3 +40,20 @@ h2 {
     top: 1140px;
     right: 0;
   }
+
+#quotes-heading{
+    font-family: 'Dancing Script', 'cursive';
+    text-align: center;
+}
+
+#quotes-container{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: 80%;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
