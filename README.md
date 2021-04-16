@@ -7,3 +7,8 @@
 3. Test driven development
 - Tests are written first to specify required component functionality
 4. Components are created to strict specification
+
+## Planning features
+
+### Home page
+1. Random inspirational quotes retriever 
