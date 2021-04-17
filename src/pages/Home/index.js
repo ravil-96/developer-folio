@@ -1,5 +1,5 @@
 import React from 'react';
-import { Quotes } from '../../components/Quotes';
+import { Quotes } from '../../components/Quotes/index';
 
 const Home = () => { 
     return (

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 const Quotes = () => {
-    const [ quotes, setQuotes ] = useState();
+    const [ quote, setQuote ] = useState();
     
-    let { data } = [
+    let data = [
         '"PERFECT IS THE ENEMY OF GOOD." –VOLTAIRE',
         '"I’M STILL LEARNING." –MICHELANGELO',
         '"LIFE IS A JOURNEY, NOT A DESTINATION." –RALPH WALDO EMERSON',
@@ -21,7 +21,7 @@ const Quotes = () => {
         '"A LEARNING CURVE IS ESSENTIAL TO GROWTH." –TAMMY BJELLAND'
     ]
 
-    setQuotes(data)
+    setQuote(data)
 
     useEffect(() => {
     const renderQuote = () => {
@@ -29,7 +29,7 @@ const Quotes = () => {
             let index = Math.floor(Math.random() * data.length);
             return index;
           }
-        return quotes[index()]
+        return quote[index()]
     }
     renderQuote()
     const stream = setInterval(renderQuote, 10000)
@@ -40,7 +40,7 @@ const Quotes = () => {
     return (
         <div id="quotes-container">
         <h1 id="quotes-heading">Motivational Quotes</h1>
-        <p>{quotes}</p>
+        <p>{quote}</p>
         </div>
     )
 }
