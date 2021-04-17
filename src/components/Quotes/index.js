@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Quotes = () => {
-    const [ quote, setQuote ] = useState();
-    
-    let data = [
+    const [ quotes, setQuote ] = useState([
         '"PERFECT IS THE ENEMY OF GOOD." –VOLTAIRE',
         '"I’M STILL LEARNING." –MICHELANGELO',
         '"LIFE IS A JOURNEY, NOT A DESTINATION." –RALPH WALDO EMERSON',
@@ -19,28 +17,27 @@ const Quotes = () => {
         '"CHANGE IS THE END RESULT OF ALL TRUE LEARNING." ―LEO BUSCAGLIA',
         '"LIVE AS IF YOU WERE TO DIE TOMORROW. LEARN AS IF YOU WERE TO LIVE FOREVER." ―MAHATMA GANDHI',
         '"A LEARNING CURVE IS ESSENTIAL TO GROWTH." –TAMMY BJELLAND'
-    ]
-
-    setQuote(data)
+    ]);
 
     useEffect(() => {
-    const renderQuote = () => {
         const index = () => {
-            let index = Math.floor(Math.random() * data.length);
+            let index = Math.floor(Math.random() * quotes.length);
             return index;
-          }
-        return quote[index()]
-    }
-    renderQuote()
-    const stream = setInterval(renderQuote, 10000)
+        }
+        const renderQuote = () => {
+            return quotes[index]
+        }
+        renderQuote()
 
-    return () => clearInterval(stream)
+        const stream = setInterval(renderQuote, 10000)
+
+        return () => clearInterval(stream)
     }, [])
 
     return (
         <div id="quotes-container">
         <h1 id="quotes-heading">Motivational Quotes</h1>
-        <p>{quote}</p>
+        <p>{quotes}</p>
         </div>
     )
 }
