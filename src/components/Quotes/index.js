@@ -16,9 +16,11 @@ const Quotes = () => {
 
         }
         
-        stream = setInterval(renderQuotes, 10000)
+        // stream = setInterval(renderQuotes, 10000)
 
-        return () => clearInterval(stream) 
+        // return () => clearInterval(stream) 
+
+        renderQuotes()
         
     }, [])
 
