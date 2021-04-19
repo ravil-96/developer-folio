@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 
 .column {
     float: left;
@@ -89,3 +91,9 @@ h2 {
   margin-bottom: 50px;
 }
 
+.pages-heading {
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  margin-top: 40px;
+}

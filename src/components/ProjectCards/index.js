@@ -9,6 +9,7 @@ const ProjectCards = ({ project }) => {
           <p className="card-text">Tools used: {project.tools}</p>
             <p className="card-text">Summary: {project.summary}</p>
             <a href={project.url} target="blank" className="card-link">Find here!</a>
+            <p></p>
           </div>
         </div>
       );
