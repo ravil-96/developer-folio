@@ -4,4 +4,4 @@ const Projects = () => {
     return <div><p>Projects are on their way!</p></div>
 }
 
-export default Projects
+export default Projects;
