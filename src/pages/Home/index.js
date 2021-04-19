@@ -1,11 +1,12 @@
 import React from 'react';
-import { Quotes } from '../../components/Quotes';
+import { Quotes, BackButton } from '../../components';
 
 const Home = () => { 
     return (
         <>
         <h2>Welcome</h2>
          <Quotes /> 
+         <BackButton />
         </>
     )
 };
