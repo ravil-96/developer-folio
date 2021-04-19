@@ -57,3 +57,35 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
+.card {
+  background-color: #ebebeb;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  margin: 0px 1px;
+  padding: 8px 10px 0px 10px;
+  margin-top: 30px;
+}
+
+.card:hover {
+  box-shadow: 2px 3px 5px rgb(205, 205, 205);
+  transition: all 0.2s ease-out;
+  top: -4px;
+}
+
+.card-link {
+  color: black;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+.card-title {
+  font-size: 1.7rem;
+}
+
+.projects-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
