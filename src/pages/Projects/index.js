@@ -26,7 +26,7 @@ const Projects = () => {
         <main aria-label="main" className="projects-container">
             <h1 className="pages-heading">Projects</h1>
             <div className="row">
-                 { renderProjects() }
+             { renderProjects ()}
             </div>
         </main>
     );

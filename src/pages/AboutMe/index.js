@@ -1,10 +1,16 @@
 import React from 'react';
+import { Titles, FeaturedStory } from '../../components';
+import { Switch, Route, useHistory } from 'react-router-dom';
 
-const About = () => {
+const AboutMe = () => {
+  const history = useHistory();
+
+  const loadFeaturedStory = id => history.push(`/about_me/${id}`)
+
   return (
       <>
       <h2 id="page-title">° A Dancer, a Programmer, a Walker and an Arts Enthusiast °</h2>
-      <div class="column">
+      {/* <div class="column">
       <p role="my-paragraph" id="my-paragraph" >
             Tech savvy and an extroverted introvert, ordinary engineering graduate during day, 
             dancer under cover of the night... As you can see, to describe myself as an individual 
@@ -20,14 +26,22 @@ const About = () => {
             And here I am, applying for software developer job 
             and hoping that Futureproof will become my springboard into the future.
         </p> 
-        </div>
+        </div> */}
         <div>
         <a class="column" href="https://youtu.be/YaN0EX2zZWc">
           <img id="me-in-munich" src="https://i.imgur.com/qXVyHde.jpg" alt="Me in Budapest Városliget" />
         </a>
         </div>
+        <section>
+        <Switch>
+            {/* Render props*/}
+            <Route exact path={"/about_me"} render={() => <Titles handleSelect={loadFeaturedStory}/>} />
+            {/* Dynamic route params */}
+            <Route path={"/about_me/:id"} component={FeaturedStory} />
+        </Switch>
+        </section>
       </>
     );
 };
 
-export default About;
+export default AboutMe;
