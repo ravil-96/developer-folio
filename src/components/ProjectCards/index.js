@@ -15,3 +15,5 @@ const ProjectCards = ({ project }) => {
     }
 
 export default ProjectCards;
+
+//fetch data from my GitHub repository (!)

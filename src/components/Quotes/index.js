@@ -4,30 +4,27 @@ import quotesData from './data.js'
 const Quotes = () => {
     const [ quote, setQuote ] = useState();
 
-    setQuotes(quotesData);
-
     useEffect(() => {
         
-        const renderQuotes = () => {
+        const flipQuotes = () => {
             
-            let index = Math.floor(Math.random() * quote.length);
-                
-            return quote.map(() => <tr><td>{quotes[index]}</td></tr>)
+            let index = Math.floor(Math.random() * quote.length);  
+            setQuote(quotesData[index])
 
         }
         
-        // stream = setInterval(renderQuotes, 10000)
+        flipQuotes()
+        const stream = setInterval(flipQuotes, 10000)
 
-        // return () => clearInterval(stream) 
-
-        renderQuotes()
+        return () => clearInterval(stream) 
         
     }, [])
 
     return (
         <div id="quotes-container">
         <h1 id="quotes-heading">Motivational Quotes</h1>
-        { quotes ? <p>{quote}</p> : <h4>Quotes are on their way!</h4>}
+        { quotes ? <p>{quote.quote}</p> &&
+                   <p>{quote.author}</p> : <h4>Quotes are on their way!</h4>}
         </div>
     )
 }
