@@ -7,7 +7,6 @@ const Footer = () => {
         <>
         <TruthsAndLies />
         <img id="pow" class="image-align" src="https://i.imgur.com/IFqIGsR.png" alt="POW!" />  
-        <p class="footer">Contact info</p>
         </>
     );
 }

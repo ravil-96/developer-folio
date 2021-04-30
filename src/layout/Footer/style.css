@@ -2,13 +2,12 @@
     color: white;
     text-align: center;
     padding: 10px;
+
   }
 
 .image-align{
-    float: right;
     width: 350px;
-    margin-right: 100px;
     position: absolute;
-    top: 800px;
-    right: 0;
+    right: -7.5%;
+    margin-right: 50px;
   }
