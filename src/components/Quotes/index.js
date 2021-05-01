@@ -7,10 +7,8 @@ const Quotes = () => {
     useEffect(() => {
         
         const flipQuotes = () => {
-            
-            let index = Math.floor(Math.random() * quote.length);  
+            let index = Math.floor(Math.random() * quotesData.length);  
             setQuote(quotesData[index])
-
         }
         
         flipQuotes()
@@ -21,11 +19,17 @@ const Quotes = () => {
     }, [])
 
     return (
+        <>
         <div id="quotes-container">
         <h1 id="quotes-heading">Motivational Quotes</h1>
-        { quotes ? <p>{quote.quote}</p> &&
-                   <p>{quote.author}</p> : <h4>Quotes are on their way!</h4>}
+            { quote ? 
+                <>
+                    <p>{quote.quote}</p> 
+                    <p>{quote.author}</p>
+                </> 
+            : <h4>Quotes are on their way!</h4>}
         </div>
+        </>
     )
 }
 
