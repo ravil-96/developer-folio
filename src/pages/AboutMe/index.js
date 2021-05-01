@@ -12,12 +12,10 @@ const AboutMe = () => {
               <a href="https://youtu.be/YaN0EX2zZWc">
                 <img id="me-in-munich" src="https://i.imgur.com/qXVyHde.jpg" alt="Me in Budapest Városliget" />
               </a>
-            </div>
-        </div>
-        <div>
-          <aside>
+              <aside>
             <TruthsAndLies />
           </aside>
+            </div>
         </div>
       </>
     );
