@@ -1,5 +1,5 @@
 import React from 'react';
-import { FeaturedStory } from '../../components';
+import { FeaturedStory, TruthsAndLies } from '../../components';
 
 const AboutMe = () => {
 
@@ -13,6 +13,11 @@ const AboutMe = () => {
                 <img id="me-in-munich" src="https://i.imgur.com/qXVyHde.jpg" alt="Me in Budapest Városliget" />
               </a>
             </div>
+        </div>
+        <div>
+          <aside>
+            <TruthsAndLies />
+          </aside>
         </div>
       </>
     );

@@ -5,7 +5,6 @@ import './style.css';
 const Footer = () => {
     return (
         <>
-        <TruthsAndLies />
         <img id="pow" class="image-align" src="https://i.imgur.com/IFqIGsR.png" alt="POW!" />  
         </>
     );
