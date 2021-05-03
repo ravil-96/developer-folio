@@ -5,7 +5,8 @@ const AboutMe = () => {
 
   return (
       <>
-      <h2 id="page-title">° A Dancer, a Programmer, a Walker and an Arts Enthusiast °</h2>
+      <h2>About Me</h2>
+      <p id="page-title">° A Dancer, a Programmer, a Walker and an Arts Enthusiast °</p>
         <div class="row">
             <div class="column"><p id="my-paragraph"><FeaturedStory /></p></div>
             <div class="column">

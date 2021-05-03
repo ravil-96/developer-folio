@@ -6,13 +6,15 @@ import './style.css'
 const Header = () => {
      return (
         <>
-        <h1 id="my-name" class="header">Ravil Shafiyev</h1>
+        <header>
+        <img id="my-name" src="https://fontmeme.com/permalink/210503/e6a49f78a878b1f6e6d9b060deadd47b.png" alt="my_name" width="200"></img>
         <nav>
         <NavLink exact to="/" activeClassName="current">Home</NavLink>
         <NavLink to="/about_me" activeClassName="current">About Me</NavLink>
         <NavLink to="/projects" activeClassName="current">Projects</NavLink>
         <NavLink to="/contact" activeClassName="current">Contact</NavLink>
         </nav>
+        </header>
         </>
      );
 }

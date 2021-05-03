@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap');
 
 .header {
-    background-color: #F1F1F1;
-    text-align: center;
+    background: transparent;
     padding: 20px;
     font-family: Rochester, serif;
     color: red;
     font-size: 55px;
-    text-align: center;
+    text-align: right;
   } 
 nav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(65, 13, 88, 0.7);
   }
 a {
     float: left;
@@ -20,7 +20,7 @@ a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: serif;
+    font-family: Marvel, serif;
   }
 a:hover {
     background-color: #ddd;

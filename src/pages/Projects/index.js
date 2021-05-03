@@ -24,7 +24,7 @@ const Projects = () => {
 
     return (
         <main aria-label="main" className="projects-container">
-            <h1 className="pages-heading">Projects</h1>
+            <h2>Projects</h2>
             <div className="row">
              { renderProjects ()}
             </div>

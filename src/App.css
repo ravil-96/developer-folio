@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('http://fonts.cdnfonts.com/css/the-amazing-spider-man?styles=49731');
 
-
+#my-name {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
 #me-in-munich {
     width:300px;
     border: 15px solid  #191966
   }
 h2 {
     text-align: center;
-    text-decoration: underline;
+    font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
     color: white;
-    font-family: serif;
+    font-size: 50px;
+    margin-top: 30px;
   }
 #my-paragraph {
     background-color: white;
@@ -81,11 +86,4 @@ h2 {
 .projects-container {
   margin-top: 30px;
   margin-bottom: 50px;
-}
-
-.pages-heading {
-  font-size: 4.5rem;
-  text-align: center;
-  font-family: "Staatliches", cursive;
-  margin-top: 40px;
 }
