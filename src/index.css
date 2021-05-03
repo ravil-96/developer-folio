@@ -8,7 +8,7 @@ body {
     overflow-y: hidden;
   }
 
-  div.scroll {
+  /* div.scroll {
     background-color: #fed9ff;
     width: 600px;
     height: 150px;
@@ -16,4 +16,4 @@ body {
     overflow-y: auto;
     text-align: center;
     padding: 20px;
-}
+} */
