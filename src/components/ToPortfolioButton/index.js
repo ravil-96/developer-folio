@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import './style.css';
 
 const ToPortfolioButton = () => {
 
@@ -9,8 +10,7 @@ const ToPortfolioButton = () => {
              e.preventDefault()
              history.push("/about_me");
          }
-    
-    return <a href="/" onClick={handleClick} className="to-portfolio-button"><img src="https://i.imgur.com/884Mrcj.png" width="30px" /></a>
+    return <a href="/" onClick={handleClick} className="portfolio-button"><img src="https://i.imgur.com/rgjXAd1.png" width='150px'/></a>
 }
 
-export default ToPortfolioButton
+export default ToPortfolioButton;

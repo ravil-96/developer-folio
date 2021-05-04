@@ -49,6 +49,12 @@ h2 {
     margin-top: 30px;
 }
 
+.portfolio-button{
+  position: absolute;
+  right: 150px;
+}
+a.portfolio-button
+
 .card {
   background-color: #ebebeb;
   border-radius: 5px;
