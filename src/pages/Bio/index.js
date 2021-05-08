@@ -2,12 +2,11 @@ import React from 'react';
 import { FeaturedStory, TruthsAndLies } from '../../components';
 import './style.css';
 
-const AboutMe = () => {
+const Bio = () => {
 
   return (
       <div class="scroll">
-      <h2>About Me</h2>
-      <p id="page-title">° A Dancer, a Programmer, a Walker and an Arts Enthusiast °</p>
+      <h2>Bio</h2>
         <div class="row">
             <div class="column side"><a href="https://youtu.be/YaN0EX2zZWc">
                 <img id="me-in-munich" src="https://i.imgur.com/qXVyHde.jpg" alt="Me in Budapest Városliget" />
@@ -24,4 +23,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default Bio;

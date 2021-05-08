@@ -8,7 +8,7 @@ const ToPortfolioButton = () => {
 
          function handleClick(e) {
              e.preventDefault()
-             history.push("/about_me");
+             history.push("/bio");
          }
     return <a href="/" onClick={handleClick} className="portfolio-button"><img src="https://i.imgur.com/rgjXAd1.png" width='150px'/></a>
 }

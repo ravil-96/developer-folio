@@ -12,7 +12,17 @@ const Projects = () => {
             cover:
                  "https://i.imgur.com/FZBpMwN.jpg",
             url: "https://github.com/ravil-96/all-about-the-journal"
-        } 
+        },
+        {
+            id: 2,
+            name: "Trivia Duck",
+            tools: "Javascript, HTML, CSS",
+            date: "2021",
+            summary: "Family-friendly trivia game",
+            cover:
+                 "https://i.imgur.com/j7g7JjK.png",
+            url: "https://github.com/ravil-96/trivia-quack"
+        }, 
     ]);
 
 

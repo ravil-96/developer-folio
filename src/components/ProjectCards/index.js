@@ -2,6 +2,7 @@ import React from "react";
 
 const ProjectCards = ({ project }) => {
     return (
+        <>
         <div className="card col-3">
           <img src={project.cover} className="card-img-top" alt="Project Image" />
           <div className="card-body">
@@ -11,6 +12,7 @@ const ProjectCards = ({ project }) => {
             <a href={project.url} target="blank" className="card-link">Find here!</a>          
             </div>
         </div>
+        </>
       );
     }
 
