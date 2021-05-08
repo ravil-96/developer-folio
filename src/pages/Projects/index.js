@@ -23,6 +23,16 @@ const Projects = () => {
                  "https://i.imgur.com/j7g7JjK.png",
             url: "https://github.com/ravil-96/trivia-quack"
         }, 
+        {
+            id: 3,
+            name: "Hobbit",
+            tools: "Javascript, HTML, CSS",
+            date: "2021",
+            summary: "Habit tracking app for lifestyle changes",
+            cover:
+                 "https://i.imgur.com/Ui9mzAL.png",
+            url: "https://github.com/ravil-96/hobbit"
+        }, 
     ]);
 
 
@@ -33,12 +43,14 @@ const Projects = () => {
       }
 
     return (
+        <>
+        <h2>Projects</h2>
         <main aria-label="main" className="projects-container">
-            <h2>Projects</h2>
             <div className="row">
              { renderProjects ()}
             </div>
         </main>
+        </>
     );
 };
 

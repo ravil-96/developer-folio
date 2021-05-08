@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCards = ({ project }) => {
     return (
         <>
-        <div className="card col-3">
+        <div className="card col-3 mx-3">
           <img src={project.cover} className="card-img-top" alt="Project Image" />
           <div className="card-body">
           <h3 className="card-title">{project.name}</h3>

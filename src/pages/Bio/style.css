@@ -5,25 +5,17 @@
 
 div.scroll {
     height: 600px;
+    width: 1300px;
     overflow-x: hidden;
     overflow-y: scroll;
     text-align: center;
     padding: 20px;
+    margin: auto;
 } 
 .column {
-  float: left;
-  padding: 10px;
-}
-
-/* Left and right column */
-.column.side {
-  width: 25%;
-}
-
-/* Middle column */
-.column.middle {
+  float: right;
   width: 50%;
-  align-content: center;
+  padding: 10px;
 }
 
 /* Clear floats after the columns */
