@@ -1,0 +1,45 @@
+#social-icons li img{
+    display: inline;
+    position: center;
+}
+
+ul{
+    list-style-type: none;
+    position: center;
+}
+
+.icons-container{
+    position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* 
+.container-xl {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-sm-flex {
+    display: flex;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-items-center {
+    align-items: center;
+}
+
+.py-4 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+} */
