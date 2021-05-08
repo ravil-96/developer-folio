@@ -10,7 +10,7 @@ const ToPortfolioButton = () => {
              e.preventDefault()
              history.push("/bio");
          }
-    return <a href="/" onClick={handleClick} className="portfolio-button"><img src="https://i.imgur.com/rgjXAd1.png" width='150px'/></a>
+    return <a href="/" onClick={handleClick} className="portfolio-button"><img src="https://i.imgur.com/JAFpQKM.png" width='150px'/></a>
 }
 
 export default ToPortfolioButton;
