@@ -4,7 +4,7 @@
 }
 
 div.scroll {
-    height: 600px;
+    height: 800px;
     width: 1300px;
     overflow-x: hidden;
     overflow-y: scroll;
