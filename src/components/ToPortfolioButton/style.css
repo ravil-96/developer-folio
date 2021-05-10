@@ -1,14 +1,11 @@
-.portfolio-button{
-    position: absolute;
-    right: 150px;
-  }
 
-a.portfolio-button{
+
+#portfolio-button{
+    opacity: 0.5;
     margin: auto;
     display: block;
-}
-
-a.portfolio-button:hover {
-    background-image: url("https://i.imgur.com/S8uTPW6.png");
-    color: black;
   }
+
+#portfolio-button:hover{
+  opacity: 1;
+}
