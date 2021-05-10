@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import { ProjectCards } from "../../components";
 
 const Projects = () => {
@@ -35,12 +36,23 @@ const Projects = () => {
         }, 
     ]);
 
+    const history = useHistory();
 
     const renderProjects = () => {
         return project.map(p =>
           <ProjectCards project={p} key={p.id}/>
         );
       }
+    
+    function handleClick(e) {
+    e.preventDefault()
+    history.push("/bio");
+    }
+
+    function handleClick2(e) {
+    e.preventDefault()
+    history.push("/contact");
+    }
 
     return (
         <>
@@ -50,6 +62,8 @@ const Projects = () => {
              { renderProjects ()}
             </div>
         </main>
+        <a href="/" onClick={handleClick} className="portfolio-button"><img id="back-button" src="https://i.imgur.com/IIFrQH6.png" width='70px'/></a>
+        <a href="/" onClick={handleClick2} className="portfolio-button"><img id="forward-button" src="https://i.imgur.com/S8uTPW6.png" width='70px'/></a>
         </>
     );
 };

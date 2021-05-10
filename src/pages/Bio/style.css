@@ -25,6 +25,25 @@ div.scroll {
   clear: both;
 }
 
+#back-button{
+  opacity: 0.5;
+  margin-left: 600px;
+  display: inline;
+}
+
+#back-button:hover{
+  opacity: 1;
+}
+
+#forward-button{
+  opacity: 0.5;
+  display: inline;
+}
+
+#forward-button:hover{
+  opacity: 1;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
