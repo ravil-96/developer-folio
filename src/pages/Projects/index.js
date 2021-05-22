@@ -34,6 +34,16 @@ const Projects = () => {
                  "https://i.imgur.com/Ui9mzAL.png",
             url: "https://github.com/ravil-96/hobbit"
         }, 
+        {
+            id: 4,
+            name: "Holiday Hub",
+            tools: "Javascript, HTML, CSS, Python",
+            date: "2021",
+            summary: "Collaborative mapping tool for holiday planning",
+            cover:
+                 "https://i.imgur.com/45xQK79.png",
+            url: "https://github.com/ravil-96/travel-buddies"
+        }, 
     ]);
 
     const history = useHistory();
