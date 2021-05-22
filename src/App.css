@@ -63,6 +63,7 @@ h2 {
   margin: 10px;
   padding: 8px 10px 0px 10px;
   margin-top: 30px;
+  display: inline-block;
 }
 
 .card:hover {
@@ -83,10 +84,11 @@ h2 {
 
 .projects-container {
   overflow-x: scroll;
+  overflow-y: auto;
   margin: auto;
   margin-top: 30px;
   width: 1000px;
-  height: 450px;
+  height: 450px; 
 }
 
 /* width */
